@@ -3,6 +3,8 @@ RewriteEngine On
 # App routing
 RewriteRule ^$ index.php?dc_action=hello/index [QSA,L]
 
+# App routingRewriteRule ^$ index.php?dc_action=thread/index [QSA,L]
+
 # DietCake routing
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f

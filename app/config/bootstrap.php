@@ -11,6 +11,19 @@ require_once HELPERS_DIR.'html_helper.php';
 // config
 require_once CONFIG_DIR.'log.php';
 
+// vendor
+require_once VENDOR_DIR.'SimpleDBI/SimpleDBI.php';
+
+require_once CONFIG_DIR.'log.php';
+require_once CONFIG_DIR.'router.php';
+require_once CONFIG_DIR.'database.php';
+
+// MySQL: board
+define('DB_DSN', 'mysql:host=localhost;dbname=board');
+define('DB_USERNAME', 'board_root');
+define('DB_PASSWORD', 'board_root');
+define('DB_ATTR_TIMEOUT', 3);
+
 spl_autoload_register(function($name) {
     $filename = Inflector::underscore($name) . '.php';
     if (strpos($name, 'Controller') !== false) {
