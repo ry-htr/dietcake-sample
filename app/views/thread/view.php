@@ -23,4 +23,4 @@
   <input type="hidden" name="page_next" value="write_end">
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-<a href="/thread/index">戻る</a>
+<a class="btn btn-large btn-primary" href="/thread/index">back</a>
