@@ -1,2 +1,6 @@
 app/config/core.php
 app/tmp/logs/*.log
+/nbproject
+.buildpath
+.project
+.settings/

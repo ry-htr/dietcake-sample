@@ -1,7 +1,6 @@
 <?php
 class Thread extends AppModel
 {
-
     public $validation = array(
         'title' => array(
             'length' => array(
@@ -72,6 +71,11 @@ class Thread extends AppModel
         );
     }
 
+    /**
+     * create new thread
+     * @param Comment $comment
+     * @throws ValidationException
+     */
     public function create(Comment $comment)
     {
         $this->validate();
