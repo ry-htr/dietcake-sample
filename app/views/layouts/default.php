@@ -5,6 +5,19 @@
     <title><?php eh($title) ?></title>
 
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" 
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script type="text/javascript"
+            src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js">
+    </script>
+    
+    <script type="text/javascript">
+$(document).ready(function() {
+    $("#myform").validate();
+});
+    </script>
+    
     <style>
       body {
         padding-top: 60px;

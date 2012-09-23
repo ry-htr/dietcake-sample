@@ -13,11 +13,11 @@
 <?php endforeach;?>
 
 <hr>
-<form class="well" method="post" action="<?php eh(url('thread/write')) ?>">
+<form id="myform" class="well" method="post" action="<?php eh(url('thread/write')) ?>">
   <label>Your name</label>
-  <input type="text" class="span2" name="username" value="<?php eh(Param::get('username')) ?>">
+  <input type="text" class="span2" name="username" value="<?php eh(Param::get('username')) ?>" required />
   <label>Comment</label>
-  <textarea name="body"><?php eh(Param::get('body')) ?></textarea>
+  <textarea name="body" class="required"><?php eh(Param::get('body')) ?></textarea>
   <br />
   <input type="hidden" name="thread_id" value="<?php eh($thread->id) ?>">
   <input type="hidden" name="page_next" value="write_end">
